@@ -70,7 +70,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -95,9 +95,24 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="./research.html"> 
 <span class="menu-text">Research</span></a>
   </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-teaching-and-supervisory" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Teaching and supervisory</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-teaching-and-supervisory">    
+        <li>
+    <a class="dropdown-item" href="./teaching.html">
+ <span class="dropdown-text">Teaching</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./supervisory.html">
+ <span class="dropdown-text">Supervisory</span></a>
+  </li>  
+    </ul>
+  </li>
   <li class="nav-item">
-    <a class="nav-link" href="./teaching.html"> 
-<span class="menu-text">Teaching</span></a>
+    <a class="nav-link" href="./economiebleue.html"> 
+<span class="menu-text">Économie bleue</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./cv.html"> 
@@ -106,12 +121,12 @@ ul.task-list li input[type="checkbox"] {
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/"> <i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://github.com/philippekabore"> <i class="bi bi-github" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://twitter.com"> <i class="bi bi-twitter" role="img">
+    <a class="nav-link" href="https://www.linkedin.com/in/philipkab/"> <i class="bi bi-linkedin" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -123,32 +138,69 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<div class="quarto-about-jolla">
-  <img src="2024_PK_Pic.jpeg" class="about-image
-  round " style="height: 15em; width: 15em;">
+<div class="quarto-about-jolla column-page">
+  <img src="2024_PK_Pic.jpeg" alt="Philippe Kabore portrait" class="about-image
+  rounded " style="width: 15em;">
  <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Philippe Kabore</h1>
 </div>
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-page">
   </div>
-</header><main class="content" id="quarto-document-content">
+</header><main class="content column-page" id="quarto-document-content">
+<style>
+:root { --about-img-size: 220px; }
+/* Force side-by-side layout for Jolla */
+.quarto-about-jolla .about-contents{
+  display: grid !important;
+  grid-template-columns: 1fr var(--about-img-size);
+  align-items: center;
+  gap: 2rem;
+}
+/* Text left, image right */
+.quarto-about-jolla .about-contents .about-body{
+  grid-column: 1 !important;
+}
+.quarto-about-jolla .about-contents .about-image{
+  grid-column: 2 !important;
+  justify-self: end;
+}
+/* Consistent image crop/size */
+.quarto-about-jolla .about-image img{
+  width: var(--about-img-size) !important;
+  height: var(--about-img-size) !important;
+  object-fit: cover;
+  border-radius: 12px;
+}
+/* Mobile: stack nicely */
+@media (max-width: 700px){
+  .quarto-about-jolla .about-contents{
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .quarto-about-jolla .about-contents .about-image{
+    grid-column: 1 !important;
+    justify-self: center;
+  }
+}
+</style>
+<hr>
 <p>Philippe Kabore is an associate professor at UQAR in the department of management. His research focuses on climate change and natural hazard, economic evaluation of environmental policies using advanced econometric methods, maritime economics and labour economics.</p>
 
 
 </main> 
   <hr class="about-sep">
    <div class="about-links">
-  <a href="https://linkedin.com/in/philippe-kabore-b97278a7/" class="about-link" rel="" target="">
+  <a href="https://www.linkedin.com/in/philipkab/" class="about-link" rel="" target="">
     <i class="bi bi-linkedin"></i>
      <span class="about-link-text">LinkedIn</span>
   </a>
-  <a href="https://github.com/philipkab" class="about-link" rel="" target="">
+  <a href="https://github.com/philippekabore" class="about-link" rel="" target="">
     <i class="bi bi-github"></i>
      <span class="about-link-text">Github</span>
   </a>

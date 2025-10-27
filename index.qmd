@@ -1,15 +1,60 @@
 ---
 title: "Philippe Kabore"
-image: 2024_PK_Pic.jpeg
+page-layout: full
+title-block-banner: false
 about:
-  template: jolla
+  template: "jolla"
+  image: "2024_PK_Pic.jpeg"     # make sure the path/file exists (case-sensitive)
+  image-alt: "Philippe Kabore portrait"
+  image-shape: "rounded"        # or "circle" | "square"
   links:
     - icon: linkedin
       text: LinkedIn
-      href: https://linkedin.com/in/philippe-kabore-b97278a7/
+      href: https://www.linkedin.com/in/philipkab/
     - icon: github
       text: Github
-      href: https://github.com/philipkab
+      href: https://github.com/philippekabore
+---
+<style>
+:root { --about-img-size: 220px; }
+
+/* Force side-by-side layout for Jolla */
+.quarto-about-jolla .about-contents{
+  display: grid !important;
+  grid-template-columns: 1fr var(--about-img-size);
+  align-items: center;
+  gap: 2rem;
+}
+
+/* Text left, image right */
+.quarto-about-jolla .about-contents .about-body{
+  grid-column: 1 !important;
+}
+.quarto-about-jolla .about-contents .about-image{
+  grid-column: 2 !important;
+  justify-self: end;
+}
+
+/* Consistent image crop/size */
+.quarto-about-jolla .about-image img{
+  width: var(--about-img-size) !important;
+  height: var(--about-img-size) !important;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* Mobile: stack nicely */
+@media (max-width: 700px){
+  .quarto-about-jolla .about-contents{
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .quarto-about-jolla .about-contents .about-image{
+    grid-column: 1 !important;
+    justify-self: center;
+  }
+}
+</style>
 ---
 
 Philippe Kabore is an associate professor at UQAR in the department of management. His research focuses on climate change and natural hazard, economic evaluation of environmental policies using advanced econometric methods, maritime economics and labour economics.

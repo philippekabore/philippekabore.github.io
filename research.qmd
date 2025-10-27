@@ -1,12 +1,18 @@
 ---
 title: "Research"
 listing:
-  contents: posts
-  sort: "date desc"
-  type: default
-  categories: true
-  sort-ui: false
-  filter-ui: false
+  - id: acad
+    contents: posts
+    include:
+      categories: "Published"       # only items with this category
+    sort: "date desc"
+    type: default
+  - id: nonacad
+    contents: posts
+    include:
+      categories: "Working in progress"
+    sort: "date desc"
+    type: default
 page-layout: full
 title-block-banner: true
 ---
@@ -46,21 +52,15 @@ title-block-banner: true
 
 ## Work in progress
 
--   **Project Title**\
-    with *Coauthors*.\
-    `Keywords`\
+-   [**Does ESG adoption improve public traded companies' performance?**](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5385737)\
+    with [**Nabil Afodjo**](https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=5654309 "View other papers by this author")and **[Ali Ghali](https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=7839904 "View other papers by this author")**.\
+    `ESG scores, firm performance, public traded company, sustainability`\
     Short description of the idea, data, and methods.
--   **Project Title**\
-    with *Coauthors*.\
-    `Keywords`\
-    Short description of the idea, data, and methods.
--   **Project Title**\
-    with *Coauthors*.\
-    `Keywords`\
-    Short description of the idea, data, and methods.
--   **Project Title**\
-    with *Coauthors*.\
-    `Keywords`\
-    Short description of the idea, data, and methods.
-
-# Other research
+-   [**Voluntary Energy Program and Environmental-Economic Performance: Evidence from Manufacturing Sector in Canada**](https://drive.google.com/file/d/11GorrHQ6WrycL5iPe8dqP94FfxiVmGRt/view?usp=sharing)\
+    with [Nicholas Rivers](https://uniweb.uottawa.ca/view/profile/members/969?lang=en).\
+    `Voluntary program, energy conservation, manufacturing, Canada`\
+    How do firms in the manufacturing sector respond to voluntary energy conservation program? Using data covering the universe of manufacturing firms in Canada over the period 2004 to 2012, we estimate the effectiveness of the Canadian Industry Program for Energy Conservation, the flagship federal government energy conservation program targeted at large industrial firms. We use a difference-in-difference approach, coupled with coarsened exact matching, to estimate the effect of this program on firms’ energy intensity, total productivity, as well as total energy and total output. Our estimation results suggest that the program does not significantly affect the energy intensity of participating firms compared to non-participating firms.
+-   [**STAR: a transposition of the PICO framework to environmental sciences, engineering and beyond**](https://www.researchsquare.com/article/rs-6475550/v1)\
+    with Paul Celicourt, Jacob Drapeau, Herlest B. Lovince, Stevens Azima, Cheikh M. M. Thiaw, Louis R. E. Asie, Louiné Célicourt, Fractyl Mertilus, Madoche Jean Louis, Alou T. Said, Harry J. Chery, Yonel Petit-Homme, Guensly Jn Pierre, Alain N. Rousseau, and Silvio Gumiere.\
+    `Literature review, search strategy, search keywords, research questions, evidence synthesis, systematic search`\
+    The formulation of research questions and the search of relevant bibliographical references are critical steps in the pursuit of evidence-based research. This process ought to be comprehensive, transparent, and reproducible. Furthermore, it must lead to the retrieval of a maximum number of potentially related articles that are subsequently analyzed to identify those that are effectively relevant. However, in environmental sciences, these tasks are often performed without an enabling systematic framework, but relying instead on an assembly of keyword strings and ‘regular expressions’ structured as a Boolean equation. This ad hoc approach often yields an incomplete and inconsistent search of the literature, which undermines the reliability of evidence syntheses. To address this gap, we introduce STAR, a System-Trouble/Treatment-Alternative-Response framework spun off the PICO (Population, Intervention, Comparison, Outcome) framework. STAR is well suited to perform evidence-based literature reviews in environmental sciences supported by robust bibliographical search strategies and research questions. In this paper, we detail the thinking process behind an effective application of STAR through several examples taken from different fields of environmental sciences and engineering (i.e., environmental informatics, hydroinformatics and sociohydrology, entomology and plant pathology, environmental sustainability, soil sciences, coastal sciences, and agrifood sciences).

@@ -71,20 +71,48 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    const listingTargetEl = window.document.querySelector('#listing-acad .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
+      searchColumns: ["listing-image"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+    window['quarto-listings']['listing-acad'] = new List('listing-acad', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-nonacad .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-image"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-nonacad'] = new List('listing-nonacad', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -156,9 +184,24 @@ window.Quarto = {
     <a class="nav-link active" href="./research.html" aria-current="page"> 
 <span class="menu-text">Research</span></a>
   </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-teaching-and-supervisory" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Teaching and supervisory</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-teaching-and-supervisory">    
+        <li>
+    <a class="dropdown-item" href="./teaching.html">
+ <span class="dropdown-text">Teaching</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./supervisory.html">
+ <span class="dropdown-text">Supervisory</span></a>
+  </li>  
+    </ul>
+  </li>
   <li class="nav-item">
-    <a class="nav-link" href="./teaching.html"> 
-<span class="menu-text">Teaching</span></a>
+    <a class="nav-link" href="./economiebleue.html"> 
+<span class="menu-text">Économie bleue</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./cv.html"> 
@@ -167,12 +210,12 @@ window.Quarto = {
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/"> <i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://github.com/philippekabore"> <i class="bi bi-github" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://twitter.com"> <i class="bi bi-twitter" role="img">
+    <a class="nav-link" href="https://www.linkedin.com/in/philipkab/"> <i class="bi bi-linkedin" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -186,13 +229,13 @@ window.Quarto = {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-left">
+    <div class="quarto-title column-page">
       <h1 class="title">Research</h1>
                       </div>
   </div>
     
   
-  <div class="quarto-title-meta column-page-left">
+  <div class="quarto-title-meta column-page">
 
       
     
@@ -203,11 +246,9 @@ window.Quarto = {
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(2)</span></div><div class="category" data-category="YW5hbHlzaXM=">analysis <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Y29kZQ==">code <span class="quarto-category-count">(1)</span></div><div class="category" data-category="bmV3cw==">news <span class="quarto-category-count">(2)</span></div></div></div>
+    
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+<main class="content quarto-banner-title-block column-page" id="quarto-document-content">
 
 
 
@@ -245,106 +286,35 @@ This paper investigates how carbon taxes affect emissions by examining British C
 <section id="work-in-progress" class="level2">
 <h2 class="anchored" data-anchor-id="work-in-progress">Work in progress</h2>
 <ul>
-<li><strong>Project Title</strong><br>
-with <em>Coauthors</em>.<br>
-<code>Keywords</code><br>
+<li><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5385737"><strong>Does ESG adoption improve public traded companies’ performance?</strong></a><br>
+with <a href="https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=5654309" title="View other papers by this author"><strong>Nabil Afodjo</strong></a>and <strong><a href="https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=7839904" title="View other papers by this author">Ali Ghali</a></strong>.<br>
+<code>ESG scores, firm performance, public traded company, sustainability</code><br>
 Short description of the idea, data, and methods.</li>
-<li><strong>Project Title</strong><br>
-with <em>Coauthors</em>.<br>
-<code>Keywords</code><br>
-Short description of the idea, data, and methods.</li>
-<li><strong>Project Title</strong><br>
-with <em>Coauthors</em>.<br>
-<code>Keywords</code><br>
-Short description of the idea, data, and methods.</li>
-<li><strong>Project Title</strong><br>
-with <em>Coauthors</em>.<br>
-<code>Keywords</code><br>
-Short description of the idea, data, and methods.</li>
+<li><a href="https://drive.google.com/file/d/11GorrHQ6WrycL5iPe8dqP94FfxiVmGRt/view?usp=sharing"><strong>Voluntary Energy Program and Environmental-Economic Performance: Evidence from Manufacturing Sector in Canada</strong></a><br>
+with <a href="https://uniweb.uottawa.ca/view/profile/members/969?lang=en">Nicholas Rivers</a>.<br>
+<code>Voluntary program, energy conservation, manufacturing, Canada</code><br>
+How do firms in the manufacturing sector respond to voluntary energy conservation program? Using data covering the universe of manufacturing firms in Canada over the period 2004 to 2012, we estimate the effectiveness of the Canadian Industry Program for Energy Conservation, the flagship federal government energy conservation program targeted at large industrial firms. We use a difference-in-difference approach, coupled with coarsened exact matching, to estimate the effect of this program on firms’ energy intensity, total productivity, as well as total energy and total output. Our estimation results suggest that the program does not significantly affect the energy intensity of participating firms compared to non-participating firms.</li>
+<li><a href="https://www.researchsquare.com/article/rs-6475550/v1"><strong>STAR: a transposition of the PICO framework to environmental sciences, engineering and beyond</strong></a><br>
+with Paul Celicourt, Jacob Drapeau, Herlest B. Lovince, Stevens Azima, Cheikh M. M. Thiaw, Louis R. E. Asie, Louiné Célicourt, Fractyl Mertilus, Madoche Jean Louis, Alou T. Said, Harry J. Chery, Yonel Petit-Homme, Guensly Jn Pierre, Alain N. Rousseau, and Silvio Gumiere.<br>
+<code>Literature review, search strategy, search keywords, research questions, evidence synthesis, systematic search</code><br>
+The formulation of research questions and the search of relevant bibliographical references are critical steps in the pursuit of evidence-based research. This process ought to be comprehensive, transparent, and reproducible. Furthermore, it must lead to the retrieval of a maximum number of potentially related articles that are subsequently analyzed to identify those that are effectively relevant. However, in environmental sciences, these tasks are often performed without an enabling systematic framework, but relying instead on an assembly of keyword strings and ‘regular expressions’ structured as a Boolean equation. This ad hoc approach often yields an incomplete and inconsistent search of the literature, which undermines the reliability of evidence syntheses. To address this gap, we introduce STAR, a System-Trouble/Treatment-Alternative-Response framework spun off the PICO (Population, Intervention, Comparison, Outcome) framework. STAR is well suited to perform evidence-based literature reviews in environmental sciences supported by robust bibliographical search strategies and research questions. In this paper, we detail the thinking process behind an effective application of STAR through several examples taken from different fields of environmental sciences and engineering (i.e., environmental informatics, hydroinformatics and sociohydrology, entomology and plant pathology, environmental sustainability, soil sciences, coastal sciences, and agrifood sciences).</li>
 </ul>
-</section>
-</section>
-<section id="other-research" class="level1">
-<h1>Other research</h1>
 
 
 
 </section>
+</section>
 
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<div class="quarto-listing quarto-listing-container-default" id="listing-acad">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="bmV3cyUyQ2NvZGUlMkNhbmFseXNpcw==" data-listing-date-sort="1761451200000" data-listing-file-modified-sort="1761485462260" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="9">
-<div class="thumbnail">
-<p><a href="./posts/post-with-code/index.html" class="no-external"></a></p><a href="./posts/post-with-code/index.html" class="no-external">
-<p><img loading="lazy" src="./posts/post-with-code/image.jpg" class="thumbnail-image"></p>
-</a><p><a href="./posts/post-with-code/index.html" class="no-external"></a></p>
+
 </div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/post-with-code/index.html" class="no-external">Post With Code</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/post-with-code/index.html" class="no-external"></a>
+<div class="listing-no-matching d-none">
+No matching items
 </div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('bmV3cw=='); return false;">
-news
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Y29kZQ=='); return false;">
-code
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('YW5hbHlzaXM='); return false;">
-analysis
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/post-with-code/index.html" class="no-external">This is a post with executable code.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/post-with-code/index.html" class="no-external">
-<div class="listing-date">
-Oct 26, 2025
-</div>
-<div class="listing-author">
-Harlow Malloc
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="bmV3cw==" data-listing-date-sort="1761192000000" data-listing-file-modified-sort="1761500316295" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="32">
-<div class="thumbnail">
-<p><a href="./posts/welcome/index.html" class="no-external"></a></p><a href="./posts/welcome/index.html" class="no-external">
-<p class="card-img-top"><img src="posts/welcome/thumbnail.jpg"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/welcome/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/welcome/index.html" class="no-external">Welcome To My Blog</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/welcome/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('bmV3cw=='); return false;">
-news
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/welcome/index.html" class="no-external">This is the first post in a Quarto blog. Welcome!</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/welcome/index.html" class="no-external">
-<div class="listing-date">
-Oct 23, 2025
-</div>
-<div class="listing-author">
-Philippe Kabore
-</div>
-</a>
-</div>
-</div>
+</div><div class="quarto-listing quarto-listing-container-default" id="listing-nonacad">
+<div class="list quarto-listing-default">
+
 </div>
 <div class="listing-no-matching d-none">
 No matching items

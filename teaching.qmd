@@ -1,12 +1,26 @@
 ---
-title: "PhilippeKabore"
-listing:
-  contents: posts
-  sort: "date desc"
-  type: default
-  categories: true
-  sort-ui: false
-  filter-ui: false
+title: "Teaching course"
+subtitle: "Graduate and Undergraduate courses"
 page-layout: full
 title-block-banner: true
+format:
+  html:
+    toc: true
+    toc-depth: 2
 ---
+
+# **Graduate courses**
+
+-   [GRM63012](https://www.uqar.ca/cours/microeconomie-pour-le-secteur-maritime/): Microéconomie pour le secteur maritime
+
+-   [GRM72512](https://www.uqar.ca/cours/economie-des-ressources-naturelles-et-de-lenvironnement/) Économie des ressources naturelles et de l’environnement
+
+-   [GRM79012](https://www.uqar.ca/cours/decisions-et-previsions-dans-le-secteur-maritime/) Décisions et prévisions dans le secteur maritime
+
+# **Undergraduate courses**
+
+-   [MQT10014](https://www.uqar.ca/cours/methodes-statistiques-en-gestion/) Méthodes statistiques en gestion
+
+-   [ECO11014](https://www.uqar.ca/cours/microeconomie/) Microéconomie
+
+-   [ECO12014](https://www.uqar.ca/cours/macroeconomie/) Macroéconomie

@@ -10,15 +10,21 @@ website:
         file: index.qmd
       - text: "Research"
         file: research.qmd
-      - text: "Teaching"
-        file: teaching.qmd
+      - text: "Teaching and supervisory"
+        menu:
+          - text: "Teaching"
+            href: teaching.qmd
+          - text: "Supervisory"
+            href: supervisory.qmd
+      - text: "Économie bleue"
+        file: economiebleue.qmd
       - text: "CV"
         file: cv.qmd
     right:
       - icon: github
-        href: https://github.com/
-      - icon: twitter
-        href: https://twitter.com
+        href: https://github.com/philippekabore
+      - icon: linkedin
+        href: https://www.linkedin.com/in/philipkab/
 format:
   html:
     theme:

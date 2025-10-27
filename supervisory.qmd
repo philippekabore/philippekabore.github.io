@@ -1,0 +1,36 @@
+---
+title: "Supervisory"
+subtitle: "Graduate and Undergraduate Student Supervision"
+page-layout: full
+title-block-banner: true
+format:
+  html:
+    toc: true
+    toc-depth: 2
+---
+
+**Graduate Supervision**
+
+-   Name: Gaye Cheikh Amadou Bamba
+
+    Project: “**Impact des températures extrêmes sur les activités de pêche au Sénégal**”
+
+    Year: En cours
+
+-   Name: Gana Deng
+
+    Project: “**Étude comparative des dynamiques touristiques des villes québécoises côtières et non côtières**” cosuperviseure [Josée Laflamme](https://www.uqar.ca/professeurs/laflamme-josee/)
+
+    Year: 2025
+
+-   Name: Salomon Jean-Marc-Artur J.
+
+    Project: “**Impact économique des fermetures des zones de pêches, dues aux espèces protégées, sur les pêcheurs : Cas du Saint-Laurent**”
+
+    Year: 2024
+
+-   Name: Mekem Tindo Gédéons
+
+    Project: “**Analyse coût-bénéfice de la valorisation des algues échouées au Québec**” cosuperviseur [Éric Tamigneaux](https://www.inaf.ulaval.ca/membres/eric-tamigneaux/)
+
+    Year: 2024
