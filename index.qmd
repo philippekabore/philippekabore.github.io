@@ -6,7 +6,7 @@ page-layout: full
 title-block-banner: false
 about:
   template: "trestles"
-  image: "2024_pk_pic.jpeg"     # make sure the path/file exists (case-sensitive)
+  image: "pk_pic.jpeg"     # make sure the path/file exists (case-sensitive)
   image-alt: "Philippe Kabore portrait"
   image-shape: "rounded"        # or "circle" | "square"
   links:
@@ -18,7 +18,7 @@ about:
       href: https://www.linkedin.com/in/philipkab/
     - icon: github
       text: Github
-      href: https://github.com/philipkab/
+      href: https://github.com/philippekabore
 ---
 
 ------------------------------------------------------------------------
