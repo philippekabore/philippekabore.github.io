@@ -1,14 +1,18 @@
 ---
 title: "Philippe Kabore"
 subtitle: "Associate professor of Environmental & Maritime Economics"
+
 page-layout: full
 title-block-banner: false
 about:
-  template: "jolla"
+  template: "trestles"
   image: "2024_pk_pic.jpeg"     # make sure the path/file exists (case-sensitive)
   image-alt: "Philippe Kabore portrait"
   image-shape: "rounded"        # or "circle" | "square"
   links:
+    - icon: envelope # This is a standard Bootstrap icon
+      text: Email
+      href: mailto:philippe_kabore@uqar.ca
     - icon: linkedin
       text: LinkedIn
       href: https://www.linkedin.com/in/philipkab/
@@ -18,5 +22,7 @@ about:
 ---
 
 ------------------------------------------------------------------------
+
+Welcome to my page!
 
 I am an associate professor at UQAR in the department of management. My research focuses on climate change and natural hazards, the economic evaluation of environmental policies, resource management, and fisheries.
