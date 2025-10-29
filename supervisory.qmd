@@ -11,26 +11,34 @@ format:
 
 **Graduate Supervision**
 
--   Name: Gaye Cheikh Amadou Bamba
+-   <div>
 
-    Project: “**Impact des températures extrêmes sur les activités de pêche au Sénégal**”
+    | Name: Gaye Cheikh Amadou Bamba
+    | Project: “**Impact des températures extrêmes sur les activités de pêche au Sénégal**”
+    | Year: En cours
 
-    Year: En cours
+    </div>
 
--   Name: Gana Deng
+-   <div>
 
-    Project: “**Étude comparative des dynamiques touristiques des villes québécoises côtières et non côtières**” cosuperviseure [Josée Laflamme](https://www.uqar.ca/professeurs/laflamme-josee/)
+    | Name: Gana Deng
+    | Project: “**Étude comparative des dynamiques touristiques des villes québécoises côtières et non côtières**” cosuperviseure [Josée Laflamme](https://www.uqar.ca/professeurs/laflamme-josee/)
+    | Year: 2025
 
-    Year: 2025
+    </div>
 
--   Name: Salomon Jean-Marc-Artur J.
+-   <div>
 
-    Project: “**Impact économique des fermetures des zones de pêches, dues aux espèces protégées, sur les pêcheurs : Cas du Saint-Laurent**”
+    | Name: Salomon Jean-Marc-Artur J.
+    | Project: “[**Impact économique des fermetures des zones de pêches, dues aux espèces protégées, sur les pêcheurs : Cas du Saint-Laurent**](https://semaphore.uqar.ca/id/eprint/3287/)”
+    | Year: 2024
 
-    Year: 2024
+    </div>
 
--   Name: Mekem Tindo Gédéons
+-   <div>
 
-    Project: “**Analyse coût-bénéfice de la valorisation des algues échouées au Québec**” cosuperviseur [Éric Tamigneaux](https://www.inaf.ulaval.ca/membres/eric-tamigneaux/)
+    | Name: Mekem Tindo Gédéons
+    | Project: “[**Analyse coût-bénéfice de la valorisation des algues échouées au Québec**](https://semaphore.uqar.ca/id/eprint/3211/)” cosuperviseur [Éric Tamigneaux](https://www.inaf.ulaval.ca/membres/eric-tamigneaux/)
+    | Year: 2024
 
-    Year: 2024
+    </div>

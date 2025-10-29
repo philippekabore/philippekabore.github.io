@@ -53,9 +53,9 @@ title-block-banner: true
 ## Work in progress
 
 -   [**Does ESG adoption improve public traded companies' performance?**](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5385737)\
-    with [**Nabil Afodjo**](https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=5654309 "View other papers by this author")and **[Ali Ghali](https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=7839904 "View other papers by this author")**.\
+    with [**Nabil Afodjo**](https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=5654309 "View other papers by this author")and [**Ali Ghali**](https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=7839904 "View other papers by this author").\
     `ESG scores, firm performance, public traded company, sustainability`\
-    Short description of the idea, data, and methods.
+    Publicly traded companies often have incentives to externalize societal costs, raising the question of how firms can maintain financial performance while voluntarily adopting socially desirable policies such as environmental, social, and governance (ESG) criteria. Estimating this relationship is complicated by endogeneity and sample selection bias, which can overstate the benefits of ESG adoption. Using Refinitiv's ESG dataset, we investigate the distinct contributions of each ESG dimension to firm performance. To establish causality, we implement a switching model with a flexible instrumental variable. Results show that ESG adoption increases return on assets (ROA) in the short term, but these gains fade over time. In contrast, return on capital employed (ROCE) improves persistently. Among ESG components, the social dimension consistently enhances performance in both the short and long term. These findings offer valuable insights for corporate leaders and policymakers seeking to balance sustainability with profitability.
 -   [**Voluntary Energy Program and Environmental-Economic Performance: Evidence from Manufacturing Sector in Canada**](https://drive.google.com/file/d/11GorrHQ6WrycL5iPe8dqP94FfxiVmGRt/view?usp=sharing)\
     with [Nicholas Rivers](https://uniweb.uottawa.ca/view/profile/members/969?lang=en).\
     `Voluntary program, energy conservation, manufacturing, Canada`\
